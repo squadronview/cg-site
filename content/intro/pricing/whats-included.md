@@ -29,7 +29,13 @@ All cloud.gov access packages include the following:
 - Self-service management of spaces and users within an organization
 - Platform maintenance and managed service expansion overhead
 
-<!--
-TODO
-- TCO statement (red/not-included stuff)
--->
+FISMA Low and FISMA Moderate access packages include:
+
+- Routes for delegated DNS (eg *appname*.*subdomain*.\*.gov)
+
+The following are not currently available:
+
+- Out-of-business-hours web/mail support, IM support, or phone support
+- Consulting (advice, development, etc. that is custom or specific to your application/system context)
+- Application-level scanning/monitoring/alerting/analytics/scaling
+- Agency-specific ATO support for non-18F applications
