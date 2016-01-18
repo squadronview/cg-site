@@ -4,7 +4,7 @@ menu:
     parent: apps
 title: General Deployment Tips
 linktitle: General Tips
-weight: -10
+weight: -100
 ---
 
 ## How deployment works
@@ -33,6 +33,9 @@ The app should now be live at `APPNAME.18f.gov`.
 ## Twelve-Factor Apps
 
 In general, applications will be easiest to deploy to Cloud Foundry if they follow the [Twelve Factor App](http://12factor.net/) guidelines.
+
+## Setting Environment Variables
+See Cloud Foundry's [documentation on environment variables](https://docs.cloudfoundry.org/devguide/deploy-apps/environment-variable.html).
 
 ## Exclude files
 

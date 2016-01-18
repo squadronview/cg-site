@@ -16,7 +16,7 @@ A system maps to an [“org” in Cloud Foundry](http://docs.cloudfoundry.org/co
 
 ## Support {#support}
 
-“Support” is support for any inability to use the platform as intended, on a best-effort basis. We have no existing service-level agreement. We plan to always publish metrics that give agencies the ability to make an informed choice about whether to use cloud.gov or an alternative PaaS solution based on our track record.
+“Support” is support to use the platform as intended, on a best-effort basis. We have no existing service-level agreement. We plan to always publish metrics that give agencies the ability to make an informed choice about whether to use cloud.gov or an alternative PaaS solution based on our actual track record.
 
 ## Consulting
 
@@ -24,9 +24,9 @@ A system maps to an [“org” in Cloud Foundry](http://docs.cloudfoundry.org/co
 
 ## Access package
 
-The "access package" component covers access to the cloud.gov Platform-as-a-Service and [support]({{< relref "#support" >}}) for it to stay up and available in its current form, as well as expanded over time. The access package component is paid 12 months at a time, and scales along with the number of systems being hosted.
+The "access package" component covers access to the cloud.gov Platform as a Service (PaaS) and [support]({{< relref "#support" >}}) for it to stay up and available in its current form, as well as expanded over time. The access package component is paid 12 months at a time, and scales along with the number of systems being hosted and the impact level of the systems being launched on the platform, as defined by [Federal Information Processing Standard (FIPS) 199](http://csrc.nist.gov/publications/fips/fips199/FIPS-PUB-199-final.pdf).
 
-The access package component would typically be paid with “non-severable” funds, for example: funds that an agency attaches to a particular fiscal year.
+The access package component is "non-severable" and therefore non-refundable. As a result, a payment in one fiscal year does not expire regardless of the status of the underlying appropriation.
 
 ## Resource usage
 
@@ -43,10 +43,4 @@ Agencies can purchase reserved capacity via 18F as well, which is understood to 
 Each managed service incurs some resource usage and platform support overhead. The managed service fees ensure we can cover our costs to provide them to you. The fee varies among services. In some cases managed services include alternative “plans” can be selected that reflect resilience, performance, and cost trade-offs.
 
 In many cases, the pricing for managed services is not yet available. This is because we are measuring their initial usage to determine what we will need to charge. We are doing more analysis of the costs we’re observing (both the cost of the IaaS layer and the cost of our support), and aim to set explicit prices for all managed services by the end of March 2016.
-
-## À la carte items {#alacarte}
-
-We use Cloud Foundry’s “marketplace” capability to enable self-service provisioning of managed services that cloud.gov itself provides. We are exploring ways to offer services commonly provisioned outside of cloud.gov via cloud.gov, including New Relic and other app-relevant IaaS components. We may be able to offer these services in a self-service manner using Cloud Foundry’s service keys in the future.
-
-18F has in the past helped agencies acquire access to these resources in a manual fashion; see our information on paying for other services. 
 
