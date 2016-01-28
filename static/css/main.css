@@ -2287,6 +2287,9 @@ table {
       flex-direction: column;
       flex-flow: column wrap;
       flex-wrap: wrap; }
+      table tbody tr .grow {
+        flex-grow: 100000;
+        height: auto; }
       table tbody tr:last-child td {
         border-left-width: 0; }
         @media screen and (min-width: 600px) {
@@ -2302,7 +2305,7 @@ table {
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-      height: 21rem;
+      height: 18rem;
       justify-content: center;
       margin: 0;
       width: 0; }
@@ -2331,7 +2334,7 @@ table {
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-      height: 21rem;
+      height: 18rem;
       justify-content: center; }
       table tbody td:last-child {
         border-bottom-width: 1px;

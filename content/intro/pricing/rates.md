@@ -21,7 +21,7 @@ Packages are selected based on the kinds of applications to be hosted.
 <table class="responsive_table">
   <tr>
     <th width="25%"><span>Sandbox</span></th>
-    <th width="25%"><span>Prototyping</span></th>
+    <th width="25%" class="grow"><span>Prototyping</span></th>
     <th width="25%"><span>FISMA Low</span></th>
     <th width="25%"><span>FISMA Moderate</span></th>
   </tr>
@@ -29,7 +29,7 @@ Packages are selected based on the kinds of applications to be hosted.
     <td valign="top">
       For any .gov or .mil account to try out cloud.gov, no paperwork required. All managed services are available.
     </td>
-    <td valign="top">
+    <td valign="top" class="grow">
       Sandbox usage caps can be raised. Suitable for many teams to deploy apps, though limited to the apps.cloud.gov domain. Low ability to delegate access control to teams. No production data allowed. Usually purchased per agency/department. 
     </td>
     <td valign="top">
@@ -41,7 +41,7 @@ Packages are selected based on the kinds of applications to be hosted.
   </tr>
   <tr>
     <td>Free</th>
-    <td>$15K / year</th>
+    <td class="grow">$15K / year</th>
     <td>$60K / year</th>
     <td>$90K / year</th>
   </tr>
