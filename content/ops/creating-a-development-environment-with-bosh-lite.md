@@ -88,7 +88,7 @@ Again the AWS CLI is nice to have here.
 
 1. Create the security group. By default, the bosh-lite Vagrantfile expects this security group to be named inception.  You can call it something else, but you'll need to make the new name available to vagrant with `export BOSH_LITE_SECURITY_GROUP=NEW-SECURITY-GROUP-NAME`.
 
-		aws ec2 create-security-group --group-name inception --description 'Access to Cloud Foundry.'
+		aws ec2 create-security-group --group-name bosh-inception --description 'Access to Cloud Foundry.'
 
 1. Add your own public IP at minimum.
 
