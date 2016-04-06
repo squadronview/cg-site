@@ -1,6 +1,14 @@
 <!--sidebar start-->
 <aside id="sidebar" class="sidenav">
   <ul class="usa-sidenav-list sidenav-list sidenav-level-one">
+    <li>
+      <form accept-charset="UTF-8" action="http://search.usa.gov/search" id="search_form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+        <input id="affiliate" name="affiliate" type="hidden" value="cloud.gov" />
+        <label for="query">Enter Search Term(s):</label>
+        <input autocomplete="off" class="usagov-search-autocomplete" id="query" name="query" type="text" />
+        <input name="commit" type="submit" value="Search" />
+      </form>
+    </li>
     {{ $currentNode := . }}
     {{ range .Site.Menus.main }}
       <li class ="sub-menu">
