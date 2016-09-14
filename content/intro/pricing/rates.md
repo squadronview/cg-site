@@ -25,7 +25,7 @@ Packages are selected based on the kinds of applications to be hosted. [Find mor
 | **FISMA Low** | One public-facing FISMA Low system, including all the spaces needed and DNS support. | $20K | No\** |
 | **FISMA Moderate** | One public-facing FISMA Moderate system, including all the spaces needed and DNS support. Additional support for FISMA Moderate data requirements. | $90K | No\** |
 
-\*Access package fees are charged yearly and are non-severable.
+\*Access package fees are charged yearly, are non-severable and non-refundable.
 
 \*\*See the [managed services](#managed-services) section for details.
 
@@ -38,7 +38,7 @@ You will be charged for resource usage as a factor of the memory, in MB of RAM, 
 - Sandbox: Resource usage is capped to 1 GB of RAM per month.
 - All other packages: $0.0033 per MB reserved per day (usually this results in $99/GB/month)
 
-Resource usage fees are charged per quarter, tallied monthly, and severable.
+Resource usage is constantly monitored, and invoiced monthly. Resource quotas are severable - money set aside for resource usage can be de-obligated. However, un-used quotas can neither be refunded or rolled over.
 
 We require your resource usage quota to **be set in advance**. This helps you control the maximum amount that your team will spend, and helps us avoid over-provisioning resources that won't be used.
 
