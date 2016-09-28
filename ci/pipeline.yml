@@ -1,10 +1,20 @@
 ---
 jobs:
+- name: update-docker-image
+  plan:
+  - get: cg-docs-docker-source
+    trigger: true
+  - put: docker-image-repo
+    params:
+      build: .
+
 - name: pull-status-check
   plan:
-  - get: pull-request
-    version: every
-    trigger: true
+  - aggregate:
+    - get: pull-request
+      trigger: true
+    - get: cg-docs-docker-source
+      passed: [update-docker-image]
   - put: pull-request
     params:
       path: pull-request
@@ -26,8 +36,11 @@ jobs:
 
 - name: deploy-production
   plan:
-  - get: cg-docs-source
-    trigger: true
+  - aggregate:
+    - get: cg-docs-source
+      trigger: true
+    - get: cg-docs-docker-source
+      passed: [update-docker-image]
   - task: build
     file: cg-docs-source/ci/build.yml
     params:
@@ -63,12 +76,28 @@ resources:
     uri: {{cg-docs-git-url}}
     branch: {{cg-docs-branch}}
 
+- name: cg-docs-docker-source
+  type: git
+  source:
+    uri: {{cg-docs-git-url}}
+    branch: {{cg-docs-branch}}
+    paths:
+    - Dockerfile
+    - package.json
+
+- name: docker-image-repo
+  type: docker-image
+  source:
+    email: {{docker-email}}
+    username: {{docker-username}}
+    password: {{docker-password}}
+    repository: {{docker-repository}}
+
 - name: pull-request
   type: pull-request
   source:
     repo: {{cg-docs-git-repo}}
     access_token: {{status-access-token}}
-    every: true
 
 - name: cloud-gov-production
   type: cf
