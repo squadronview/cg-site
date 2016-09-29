@@ -3,7 +3,7 @@ image_resource:
   type: docker-image
   source:
     repository: mhart/alpine-node
-    tag: '4'
+    tag: latest
 inputs:
 - name: cg-docs-source
 outputs:

@@ -3,7 +3,6 @@ jobs:
 - name: pull-status-check
   plan:
   - get: pull-request
-    version: every
     trigger: true
   - put: pull-request
     params:
@@ -68,7 +67,6 @@ resources:
   source:
     repo: {{cg-docs-git-repo}}
     access_token: {{status-access-token}}
-    every: true
 
 - name: cloud-gov-production
   type: cf
