@@ -3,6 +3,10 @@
 set -e
 set -x
 
+echo $(pwd)
+df -h
+mount
+
 # install dependencies, for the following (respectively): NPM, node-sass, Hugo
 # https://github.com/18F/cg-docs/issues/279
 apk add --no-cache --update \
