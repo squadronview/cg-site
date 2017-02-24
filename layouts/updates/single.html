@@ -14,10 +14,10 @@
     </div>
 
     <main class="usa-content">
-      <div class="usa-grid">
-        <div class="usa-width-two-thirds panel content-text">
+      <div class="usa-grid panel content-text">
+        <div class="usa-width-two-thirds">
           <header class="post-header">
-            <span class="panel-new-date">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} • {{ .Params.author }}{{ end }}{{ if .Params.meta }} • {{ .Params.meta }}{{ end }}</span>
+            <time class="contents-date">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} • {{ .Params.author }}{{ end }}{{ if .Params.meta }} • {{ .Params.meta }}{{ end }}</time>
           </header>
           <h1>{{ .Title }}</h1>
 
