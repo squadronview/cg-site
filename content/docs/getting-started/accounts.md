@@ -34,21 +34,11 @@ Your cloud.gov account requires multi-factor authentication. To log into the sys
 In order to perform multi-factor authentication, you need an authentication application that generates time-based one-time passcodes, such as [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en) or [Authy](https://www.authy.com/app/mobile). Download the app on your mobile device. When you log into cloud.gov for the first time, follow the instructions to store the `cloud.gov` key in your application.
 {{% /govcloud %}}
 
-{{% eastwest %}}
-Your cloud.gov account has a username and password. Follow [these instructions to log in on the command line (CLI) and web UI (dashboard)]({{< relref "setup.md" >}}).
-
-You can [reset your own password](https://login.cloud.gov/forgot_password).
-{{% /eastwest %}}
-
 ### Deployer accounts
 
 {{% govcloud %}}
 If you're using the [deployer account broker]({{< relref "docs/apps/continuous-deployment.md" >}}), you can delete and recreate that account to reset the credentials.
 {{% /govcloud %}}
-
-{{% eastwest %}}
-For `ORGNAME_deployer` accounts, if you need the password reset, please contact [cloud.gov support](/help/), providing the account name with your request, and a member of the cloud.gov team will provide you with a new password.
-{{% /eastwest %}}
 
 ## Use your account responsibly
 
