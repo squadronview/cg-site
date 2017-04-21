@@ -23,8 +23,6 @@ If you have a GSA, EPA, or FDIC email address, sign into cloud.gov using your ag
 
 If you were invited with an email address that isn't part of an agency with single sign-on authentication to cloud.gov, you have a cloud.gov account.
 
-{{% govcloud %}}
-
 Follow [these instructions to log in on the command line (CLI) and web UI (dashboard)]({{< relref "setup.md" >}}). When you log in to cloud.gov via a web browser, select the **cloud.gov** option.
 
 <!--<img src="/img/cloud-gov-idp-button-cropped.png" alt="cloud.gov provider button to login page is highlighted in blue" width="373" height="187" />-->
@@ -32,13 +30,10 @@ Follow [these instructions to log in on the command line (CLI) and web UI (dashb
 Your cloud.gov account requires multi-factor authentication. To log into the system, you need two "factors" -- something you know (your password) and something you have on your person (your smartphone).
 
 In order to perform multi-factor authentication, you need an authentication application that generates time-based one-time passcodes, such as [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en) or [Authy](https://www.authy.com/app/mobile). Download the app on your mobile device. When you log into cloud.gov for the first time, follow the instructions to store the `cloud.gov` key in your application.
-{{% /govcloud %}}
 
 ### Deployer accounts
 
-{{% govcloud %}}
 If you're using the [deployer account broker]({{< relref "docs/apps/continuous-deployment.md" >}}), you can delete and recreate that account to reset the credentials.
-{{% /govcloud %}}
 
 ## Use your account responsibly
 
